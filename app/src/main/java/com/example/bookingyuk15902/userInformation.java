@@ -54,7 +54,8 @@ public class userInformation extends AppCompatActivity {
     }
 
     private void openUserConfirm() {
-        
+        Intent intent = new Intent(this, userConfirmation.class);
+        startActivity(intent);
     }
 
     private void backToUserDataForm() {
