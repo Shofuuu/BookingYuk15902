@@ -17,8 +17,33 @@ public class userSelectTicket extends AppCompatActivity {
         btnTiketPesawat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                openTiketPesawat();
             }
         });
+
+        Button btnTiketKereta = (Button) findViewById(R.id.btnTiketKeretaApi);
+        btnTiketKereta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTiketKereta();
+            }
+        });
+
+        Button btnTiketBis = (Button) findViewById(R.id.btnTiketBis);
+        btnTiketBis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTiketBis();
+            }
+        });
+    }
+
+    private void openTiketBis() {
+    }
+
+    private void openTiketKereta() {
+    }
+
+    private void openTiketPesawat() {
     }
 }
