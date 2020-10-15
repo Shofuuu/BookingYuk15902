@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">BookingYuk15902</string>
+    <string-array name="spinnerPesawat">
+        <item>Elang</item>
+        <item>Merpati</item>
+        <item>Perkutut</item>
+        <item>Nuri</item>
+    </string-array>
+
+    <string-array name="spinnerKereta">
+        <item>ArgoSatu</item>
+        <item>ArgoDua</item>
+        <item>ArgoTiga</item>
+        <item>ArgoEmpat</item>
+    </string-array>
+
+    <string-array name="spinnerBis">
+        <item>Widya</item>
+        <item>Dedy</item>
+        <item>Budi</item>
+        <item>Alif</item>
+    </string-array>
 </resources>
