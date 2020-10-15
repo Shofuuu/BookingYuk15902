@@ -34,7 +34,13 @@ public class userInformation extends AppCompatActivity {
         valueJenisKendaraan.setText(intent.getStringExtra(userTiketPesawat.EXTRA_JENIS_KENDARAAN));
         valueNamaKendaraan.setText(intent.getStringExtra(userTiketPesawat.EXTRA_SPINNER_KENDARAAN));
         valueHariKeberangkatan.setText(intent.getStringExtra(userTiketPesawat.EXTRA_HARI_PENERBANGAN));
-        valueWaktu.setText(intent.getStringExtra(userTiketPesawat.EXTRA_WAKTU));
+
+        String newWaktu = intent.getStringExtra(userTiketPesawat.EXTRA_WAKTU);;
+        StringBuilder buildWaktu = new StringBuilder(newWaktu);
+
+        buildWaktu.setCharAt(newWaktu.indexOf(',', newWaktu.length()-3), '\0');
+        newWaktu =  buildWaktu.toString();
+        valueWaktu.setText(newWaktu);
 
         Button btnTidak = (Button) findViewById(R.id.btnTidak);
         btnTidak.setOnClickListener(new View.OnClickListener() {
