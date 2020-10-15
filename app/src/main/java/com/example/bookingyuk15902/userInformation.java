@@ -4,10 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
-import com.example.bookingyuk15902.GlobalClass;
 
 public class userInformation extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class userInformation extends AppCompatActivity {
         TextView valueWaktu = (TextView) findViewById(R.id.valueWaktu);
 
         Intent intent = getIntent();
-        GlobalClass globalClass = new GlobalClass();
+        GlobalClass globalClass = (GlobalClass) getApplicationContext();
 
         valueNama.setText(globalClass.getValueName());
         valueTelp.setText(globalClass.getValueTelp());
@@ -34,5 +35,30 @@ public class userInformation extends AppCompatActivity {
         valueNamaKendaraan.setText(intent.getStringExtra(userTiketPesawat.EXTRA_SPINNER_KENDARAAN));
         valueHariKeberangkatan.setText(intent.getStringExtra(userTiketPesawat.EXTRA_HARI_PENERBANGAN));
         valueWaktu.setText(intent.getStringExtra(userTiketPesawat.EXTRA_WAKTU));
+
+        Button btnTidak = (Button) findViewById(R.id.btnTidak);
+        btnTidak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                backToUserDataForm();
+            }
+        });
+
+        Button btnYa = (Button) findViewById(R.id.btnYa);
+        btnYa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openUserConfirm();
+            }
+        });
+    }
+
+    private void openUserConfirm() {
+        
+    }
+
+    private void backToUserDataForm() {
+        Intent intent = new Intent(this, userDataForm.class);
+        startActivity(intent);
     }
 }

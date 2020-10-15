@@ -63,7 +63,7 @@
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="240dp"
+        android:layout_width="190dp"
         android:layout_height="50dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
@@ -71,13 +71,13 @@
         android:gravity="center_vertical"
         android:text="Hari Keberangkatan :"
         android:textColor="@color/textColor"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/valueHariKeberangkatan"
-        android:layout_width="80dp"
+        android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"

@@ -4,10 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import com.example.bookingyuk15902.GlobalClass;
 
 public class userDataForm extends AppCompatActivity {
 
@@ -35,7 +35,7 @@ public class userDataForm extends AppCompatActivity {
         EditText textEmail = (EditText) findViewById(R.id.valueEmail);
         String valueEmail = textEmail.getText().toString();
 
-        GlobalClass globalClass = new GlobalClass();
+        GlobalClass globalClass = (GlobalClass) getApplicationContext();
         globalClass.setValueEmail(valueEmail);
         globalClass.setValueName(valueNama);
         globalClass.setValueTelp(valueTelp);
