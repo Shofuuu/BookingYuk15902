@@ -40,11 +40,11 @@ public class userTiketPesawat extends AppCompatActivity {
         labelKendaraan.setText("Pilih " + pilihanKendaraan);
 
         List<String> strKendaraan;
-        if(pilihanKendaraan == "Pesawat")
+        if(pilihanKendaraan.equals("Pesawat"))
             strKendaraan = Arrays.asList(getResources().getStringArray(R.array.spinnerPesawat));
-        else if(pilihanKendaraan == "Kereta")
+        else if(pilihanKendaraan.equals("Kereta"))
             strKendaraan = Arrays.asList(getResources().getStringArray(R.array.spinnerKereta));
-        else if(pilihanKendaraan == "Bis")
+        else if(pilihanKendaraan.equals("Bis"))
             strKendaraan = Arrays.asList(getResources().getStringArray(R.array.spinnerBis));
         else
             strKendaraan = Arrays.asList(getResources().getStringArray(R.array.spinnerPesawat));

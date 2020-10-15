@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+import com.example.bookingyuk15902.GlobalClass;
 
 public class userInformation extends AppCompatActivity {
 
@@ -24,9 +25,11 @@ public class userInformation extends AppCompatActivity {
         TextView valueWaktu = (TextView) findViewById(R.id.valueWaktu);
 
         Intent intent = getIntent();
-        valueNama.setText(intent.getStringExtra(userDataForm.EXTRA_NAMA));
-        valueTelp.setText(intent.getStringExtra(userDataForm.EXTRA_TELP));
-        valueEmail.setText(intent.getStringExtra(userDataForm.EXTRA_EMAIL));
+        GlobalClass globalClass = new GlobalClass();
+
+        valueNama.setText(globalClass.getValueName());
+        valueTelp.setText(globalClass.getValueTelp());
+        valueEmail.setText(globalClass.getValueEmail());
         valueJenisKendaraan.setText(intent.getStringExtra(userTiketPesawat.EXTRA_JENIS_KENDARAAN));
         valueNamaKendaraan.setText(intent.getStringExtra(userTiketPesawat.EXTRA_SPINNER_KENDARAAN));
         valueHariKeberangkatan.setText(intent.getStringExtra(userTiketPesawat.EXTRA_HARI_PENERBANGAN));

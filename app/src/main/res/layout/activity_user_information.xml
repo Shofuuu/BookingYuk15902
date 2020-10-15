@@ -29,6 +29,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:textSize="25dp"
+        android:textColor="@color/textColor"
         android:gravity="center_vertical"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/valueTelp" />
@@ -55,6 +56,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:textSize="25dp"
+        android:textColor="@color/textColor"
         android:gravity="center_vertical"
         app:layout_constraintStart_toEndOf="@+id/textView23"
         app:layout_constraintTop_toBottomOf="@+id/valueHariKeberangkatan" />
@@ -81,25 +83,27 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:textSize="25dp"
+        android:textColor="@color/textColor"
         android:gravity="center_vertical"
         app:layout_constraintStart_toEndOf="@+id/textView21"
         app:layout_constraintTop_toBottomOf="@+id/valueNamaKendaraan" />
 
     <TextView
         android:id="@+id/valueNamaKendaraan"
-        android:layout_width="110dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:textSize="25dp"
+        android:textColor="@color/textColor"
         android:gravity="center_vertical"
         app:layout_constraintStart_toEndOf="@+id/textView19"
         app:layout_constraintTop_toBottomOf="@+id/valueJenisKendaraan" />
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="210dp"
+        android:layout_width="170dp"
         android:layout_height="50dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
@@ -107,7 +111,7 @@
         android:gravity="center_vertical"
         android:text="Nama Kendaraan :"
         android:textColor="@color/textColor"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
@@ -133,20 +137,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:textSize="25dp"
+        android:textColor="@color/textColor"
         android:gravity="center_vertical"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/valueNama" />
-
-    <TextView
-        android:id="@+id/valueNama"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="center_vertical"
-        android:textSize="25dp"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView7"
@@ -154,13 +148,25 @@
         android:layout_height="50dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="28dp"
         android:gravity="center_vertical"
         android:text="Nama :"
         android:textColor="@color/textColor"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/valueNama"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/textColor"
+        android:gravity="center_vertical"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView17"
@@ -184,6 +190,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:textSize="25dp"
+        android:textColor="@color/textColor"
         android:gravity="center_vertical"
         app:layout_constraintStart_toEndOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/valueEmail" />

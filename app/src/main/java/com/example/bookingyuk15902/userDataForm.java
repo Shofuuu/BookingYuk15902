@@ -7,11 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import com.example.bookingyuk15902.GlobalClass;
 
 public class userDataForm extends AppCompatActivity {
-    public static final String EXTRA_NAMA = "com.example.bookingyuk15902.EXTRA_NAMA";
-    public static final String EXTRA_TELP = "com.example.bookingyuk15902.EXTRA_TELP";
-    public static final String EXTRA_EMAIL = "com.example.bookingyuk15902.EXTRA_EMAIL";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +35,12 @@ public class userDataForm extends AppCompatActivity {
         EditText textEmail = (EditText) findViewById(R.id.valueEmail);
         String valueEmail = textEmail.getText().toString();
 
+        GlobalClass globalClass = new GlobalClass();
+        globalClass.setValueEmail(valueEmail);
+        globalClass.setValueName(valueNama);
+        globalClass.setValueTelp(valueTelp);
+
         Intent intent = new Intent(this, userSelectTicket.class);
-
-        intent.putExtra(EXTRA_NAMA, valueNama);
-        intent.putExtra(EXTRA_TELP, valueTelp);
-        intent.putExtra(EXTRA_EMAIL, valueEmail);
-
         startActivity(intent);
     }
 }
